@@ -58,6 +58,9 @@ HRC = calculate_HRC(emb)
 output_col1, output_col2, output_col3 = st.columns(3)
 
 with output_col1:
+    st.markdown(f"**Fault Current (Isc):** `{F:.4f} kA`", unsafe_allow_html=True)
+
+with output_col1:
     st.markdown(f"**Flash Protection Boundary (Dc):** `{dc:.4f} ft ({dc_inches:.4f} inches)`", unsafe_allow_html=True)
 
 with output_col2:
