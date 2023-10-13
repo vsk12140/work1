@@ -39,7 +39,7 @@ st.header('Enter Parameters')
 input_col1, input_col2 = st.columns(2)
 
 MVA = input_col1.number_input('MVA value', value=1.0)
-t = input_col1.number_input('t value', value=1.0)
+t = st.number_input('t value', value=1.0, format="%.4f")
 Z = input_col1.number_input('Z value', value=1.0)
 
 D = input_col2.number_input('D value', value=1.0)
